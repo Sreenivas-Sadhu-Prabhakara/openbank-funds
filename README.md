@@ -1,5 +1,7 @@
 # openbank-funds
 
+[![CI](https://github.com/Sreenivas-Sadhu-Prabhakara/openbank-funds/actions/workflows/ci.yml/badge.svg)](https://github.com/Sreenivas-Sadhu-Prabhakara/openbank-funds/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Go](https://img.shields.io/badge/Go-1.25-00ADD8?logo=go&logoColor=white)](https://go.dev)
+
 The **Funds (CBPII)** microservice — *Confirmation of Funds*, part of the BIAN *Customer Position* service domain, exposing the OBIE **CBPII** funds-confirmation API.
 
 It validates an authorised `funds-confirmation` consent (against the consent service), reads the debtor account from that consent, and asks the **accounts** service whether sufficient funds are available — accounts is the single source of truth for balances, so this service never stores balance data.
